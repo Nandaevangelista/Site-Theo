@@ -35,6 +35,8 @@ body {
     width: 30%;
 }
 
+/*MENU LATERAL */
+
 .menu-lateral {
     display: flex;
     flex-direction: column;
@@ -56,8 +58,6 @@ body {
     align-self: center;
     padding: 30px;
 }
-
-/*LINKS*/
 
 .menu-lateral__link {
     height: 50px;
@@ -101,4 +101,50 @@ body {
 
 .menu-lateral__link--ferramentas::before {
     content: "\e903";
+}
+
+
+/*PAGINA PRINCIPAL*/
+
+.principal{
+    color: var(--branco);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.titulo-pagina {
+    font-size: 1.2rem;
+    color: var(--branco-menu);
+}
+
+.cartao {
+    width: 100%;
+    overflow: hidden; /*qualquer coisa que ultrapasse essa margem irá ficar escondido*/
+    background-color: brown; /*só para me dar direção*/
+}
+
+.cartao__imagem {
+    width: 100%;
+      
+}
+.cartao__titulo {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 18px;
+}
+.cartao__botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    margin: 0 50px 0px 100px;
+}
+
+.cartao__botao::before {
+    margin-right: 8px;
 }
