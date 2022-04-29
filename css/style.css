@@ -66,13 +66,13 @@ body {
     padding-left: 54px;
     display: flex;
     align-items: center;
+    transition: 1s;
     
 }
 
 .menu-lateral__link--ativo {
     color: var(--azul-escuro-fundo);
     padding-left: 56px;
-    border-left: 8px solid var(--azul-escuro-fundo); 
     font-size: 18px;
 }
 
@@ -90,8 +90,24 @@ body {
     content: "\e902";
 }
 
+.menu-lateral__link--inicio:hover{
+    color: var(--azul-escuro-fundo);
+    padding-left: 56px;
+    border-left: 8px solid var(--azul-escuro-fundo); 
+    font-size: 18px;
+    transition: 1s;
+}
+
 .menu-lateral__link--produtos::before {
     content: "\e901";
+}
+
+.menu-lateral__link--produtos:hover {
+    color: var(--azul-escuro-fundo);
+    padding-left: 56px;
+    border-left: 8px solid var(--azul-escuro-fundo); 
+    font-size: 18px;
+    transition: 1s;
 }
 
 .menu-lateral__link--videos::before {
@@ -99,10 +115,23 @@ body {
 
 }
 
+.menu-lateral__link--videos:hover{
+    color: var(--azul-escuro-fundo);
+    padding-left: 56px;
+    border-left: 8px solid var(--azul-escuro-fundo); 
+    font-size: 18px;
+    transition: 1s;
+}
 .menu-lateral__link--ferramentas::before {
     content: "\e903";
 }
 
+.menu-lateral__link--ferramentas:hover{
+    color: var(--azul-escuro-fundo);
+    padding-left: 56px;
+    border-left: 8px solid var(--azul-escuro-fundo); 
+    font-size: 18px;
+    transition: 1s;
 
 /*PAGINA PRINCIPAL*/
 
@@ -121,7 +150,6 @@ body {
 .cartao {
     width: 100%;
     overflow: hidden; /*qualquer coisa que ultrapasse essa margem irá ficar escondido*/
-    background-color: brown; /*só para me dar direção*/
 }
 
 .cartao__imagem {
