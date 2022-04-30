@@ -67,7 +67,7 @@ body {
     display: flex;
     align-items: center;
     transition: 1s;
-    
+      
 }
 
 .menu-lateral__link--ativo {
@@ -143,7 +143,10 @@ body {
 
 .titulo-pagina {
     font-size: 1.2rem;
+    font-weight: 600;
     color: var(--branco-menu);
+    margin-bottom: 15px;
+    margin-left: 35px;
 }
 
 .cartao {
@@ -161,17 +164,28 @@ body {
     font-weight: 700;
     padding: 18px;
 }
-.cartao__botao {
+.customizar__botao {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 200px;
     height: 40px;
-    border-radius: 15px;
-    font-size: 0.9rem;
-    margin: 0 50px 0px 100px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    margin: 0 50px 30px 100px;
+    font-weight: 700;
+    background-color: var(--branco-menu);
+    color: var(--cinza-botao);
+    border-color: var(--cinza-botao);
+    
 }
 
-.cartao__botao::before {
+.customizar__botao::before {
     margin-right: 8px;
 }
+
+.customizar__botao:hover {
+    color: var(--azul-escuro-fundo);
+    transition: 1s;
+}
+
